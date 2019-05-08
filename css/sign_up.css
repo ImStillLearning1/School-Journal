@@ -1,0 +1,158 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image:url("../img/sign_up1.jpg");
+    color:White;
+}
+
+.container-fluid
+{
+    width:100%;
+    height:100vh;
+}
+
+.top
+{
+    background: linear-gradient(135deg, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%);
+    width:inherit;
+    height:15%;
+    border-bottom:5px solid white;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.content
+{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:inherit;
+    height:75%;
+    /*background-color:antiquewhite;*/
+}
+
+.footer
+{
+    height:10%;
+    width:inherit;
+    /*background-color:beige;*/
+}
+
+.sign_up
+{
+    width:40%;
+    height:70%;
+    /*background-color:white;*/
+    padding:30px;
+}
+
+.sign_up--registration
+{
+    height:90%;
+}
+.sign_up h2
+{
+    margin:0 auto;
+    width:50%;
+    font-size:50px;
+    text-align:center;
+}
+
+.sign_up--registration h2
+{
+    margin:0 auto;
+    width:65%;
+    font-size:50px;
+    text-align:center;
+}
+
+.sign_up p
+{
+    width:50%;
+    margin:0 auto;
+    text-align:center;
+    margin-top:5%;
+    height:5%;
+}
+input,label
+{
+    display:block;
+}
+
+form
+{
+    height:55%;  
+}
+
+input
+{
+    width:100%;
+    height:30px;
+}
+
+input[type="submit"]
+{
+    position:relative;
+    top:20%;
+    left:80%;
+    width:20%;
+    cursor:pointer;
+}
+
+.registration
+{
+    position:relative;
+    top:15% !important;
+    left:80%;
+    width:20%;
+    cursor:pointer;
+}
+
+.sign_up--label
+{
+    height:25% !important;
+}
+label
+{
+    position:relative;
+    top:15%;
+    height:20%;
+}
+
+.registration--a
+{
+        position:relative;
+    top:5%;
+}
+
+a
+{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width:60%;
+    margin:0 auto;
+    text-align:center;
+    background-color:red;
+    height:60px;
+    text-decoration: none;
+    border-radius:30px;
+}
+
+.column-1
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

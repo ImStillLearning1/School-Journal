@@ -1,0 +1,347 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body
+{
+    background-image:url("img/sign_up3.jpg");
+    padding-right:30px;
+    padding-left:30px;
+    font-family: 'Playfair Display', serif;
+
+}
+.container
+{
+    height:100vh;
+}
+
+.top,
+.footer
+{
+    /*background-color: black;*/
+    height:25%;
+}
+.top
+{
+    /*background-image:url("./img/baner.jpg");*/
+    background-size:100% 100%;
+    height:20%;
+}
+
+.header
+{
+    text-align:center;
+    font-size:55px;
+    font-weight:900;
+}
+.footer
+{
+    clear:both;
+    height:5%;
+    /*background-color:red;*/
+}
+
+.content,
+.menu
+{
+    height:75%;
+    float:left;
+}
+
+.content
+{
+    background: transparent;
+    width:80%;
+    clear:both;
+    position:relative;
+    left:20%;
+    
+}
+
+/* POP-UP */
+.pop-up
+{
+    position:absolute;
+    width:130px;
+    height:40px;
+    background-color:#555;
+    border-radius:10px;
+    visibility:hidden;
+    user-select: none;
+    text-align:center;
+    line-height:40px;
+    opacity:0;
+    color:white;
+
+}
+
+/* MENU */
+.menu
+{
+    float:left;
+    background: linear-gradient(135deg, #45484d 0%,#000000 100%);
+    position:absolute;
+    height:100vh;
+    top:0;
+    left:0;
+    width:20%;
+    transform:translateX(-80%);
+    box-shadow:5px 5px 5px black;
+    transition:1s;
+    padding:0;
+    z-index:5;
+}
+
+.menu_headers
+{
+    cursor:default !important;
+}
+
+.menu_headers h2
+{
+    position:static;
+    padding-left:10px;
+    font-size: 30px;
+    background:  linear-gradient(135deg, rgba(242,246,248,1) 0%,rgba(216,225,231,1) 50%,rgba(181,198,208,1) 51%,rgba(224,239,249,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hamburger-menu
+{
+    position:absolute;
+    top:0;
+    right:0;
+    float:left;
+    width:45px;
+    height:39px;
+    padding:5px;   
+}
+
+
+.hamburger-animate
+{
+    animation-name:hamburgerRotate;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.hamburger-menu:hover
+{
+    cursor:pointer;
+}
+
+.hamburger-menu-active
+{
+    animation-name: hamburgerMenu;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.hamburger-menu-hidden
+{
+    animation-name: hamburgerHidden;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+.bar
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    
+}
+.bar:first-of-type
+{
+    margin-top:0;
+}
+.menu > ul 
+{
+    padding-top:10%;
+    height:100%;
+}
+
+.menu > ul > li
+{
+    display:flex;
+    align-items:center;
+    height: 5.29%;
+    border-bottom:1px solid black;
+    cursor:pointer;
+}
+
+.button,.button2
+{
+    background-color:inherit;
+    width:65%;
+    height:100%;
+    border:grey;
+    text-align:left;
+    font-size:20px;
+    font-weight:700;
+    color:white;
+    margin-left:5%;
+    cursor:pointer;
+    outline:none;
+    font-family: 'Playfair Display', serif;
+}
+.active
+{
+    background-color:#282828;
+    box-shadow:2px 2px 2px 2px black;
+    transition:.5s;
+}
+
+th,td
+{
+    background-color:white;
+    
+}
+
+.user
+{
+    position:absolute;
+    top:0;
+    left:0;
+    padding-left:15px;
+    padding-top:15px;
+    font-size:18px;
+    font-weight:900;
+}
+
+.user span
+{
+    color:white;
+}
+
+.dropdown
+{
+    position:absolute;
+    left:102%;
+    top:74.5%;
+    height:10.6%;
+    background: linear-gradient(135deg, #45484d 0%,#000000 100%);
+    display:none;
+    border-radius:15px;
+    z-index:999999;
+}
+
+.dropdown__class
+{
+    top:85%;
+}
+
+.dropdown__menu
+{
+    list-style-type: none;
+    position:relative;
+    
+    height:100%;
+}
+
+.dropdown__menu > li
+{
+    display:flex;
+    align-items:center;
+    height: 50%;
+    border-bottom:1px solid black;
+    cursor:pointer;
+}
+
+.button3
+{
+    background-color:inherit;
+    width:20vw;
+    height:100%;
+    border:grey;
+    text-align:left;
+    color:white;
+    margin-left:5%;
+    cursor:pointer;
+    outline:none;
+    font-weight:700;
+    font-size:16px;
+    font-family: 'Playfair Display', serif;
+}
+/*.button,.button1,.button2
+{
+    
+    background:    #c63d62;
+    background:    -webkit-linear-gradient(#c63d62, #630734);
+    background:    linear-gradient(#c63d62, #630734);
+    border:        3px solid #99558b;
+    border-radius: 1000px;
+    cursor:pointer;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       block;
+    font:          normal 700 24px/1 "Calibri", sans-serif;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
+    height:50%;
+    width:100%;
+    transition: 0.5s ease-in-out;
+    text-decoration:none;
+}
+
+.button:hover,.button1:hover,.button2:hover
+{
+    color: yellow;
+    box-shadow:    -7px 7px #999999;
+    transition: 0.5s ease-in-out;
+    
+}*/
+
+table
+{
+    text-align:center;
+    width:100%;
+    border-spacing:5px;
+    
+}
+
+i
+{
+    color:grey;
+}
+
+
+/* ANIMACJE */
+
+@keyframes hamburgerMenu /* Pokazanie menu */
+{
+    0%{transform:translateX(-80%);}
+    100%{transform:translateX(0%);}
+}
+
+@keyframes hamburgerHidden /* Schowanie menu */
+{
+    0%{transform:translateX(0%);}
+    100%{transform:translateX(-80%);}
+}
+
+@keyframes hamburgerRotate /* Animacja przycisku menu */
+{
+    0%{transform:rotateZ(0deg);}
+    100%{transform:rotateZ(180deg);}
+}
+
+@keyframes fideIn /* Animacja nagłówków w menu 
+{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+
+
+
+

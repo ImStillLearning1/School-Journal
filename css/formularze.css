@@ -1,0 +1,59 @@
+input
+{
+    display:block;
+    width:500px;
+    height:30px;
+    margin-bottom:25px;
+}
+
+input[type="radio"]
+{
+    display: initial;
+    width:initial;
+}
+select
+{
+    display:block;
+    width:500px;
+    margin-bottom:25px;
+}
+
+.inputs
+{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+form
+{
+    display:block;
+    animation-name:fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h2
+{
+    position:relative;
+    top:-30px;
+    opacity:0;
+    animation-name:fadeInHeaders;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes fadeIn
+{
+    0%{opacity: 0;transform:translateX(30%);}
+    100%{opacity:1;transform:translateX(0);}
+}
+
+@keyframes fadeInHeaders
+{
+    0%{opacity: 0;transform:translateX(-50%);}
+    100%{opacity:1;transform:translateX(0);}
+}
